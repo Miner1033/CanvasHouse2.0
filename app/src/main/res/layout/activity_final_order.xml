@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payment_method_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/payment_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="141dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/money" />
+
+    <TextView
+        android:id="@+id/payment_welcome_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Please Select Payment Method"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bkash_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="bKash"
+            android:textSize="20dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FF01E6"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/nagad_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nagad"
+            android:textSize="20dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#EF0303"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dbbl_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DBBL"
+            android:textSize="20dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#087DFA"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/cod_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="COD"
+            android:textSize="20dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#231F1F"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

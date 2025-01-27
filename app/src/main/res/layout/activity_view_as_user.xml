@@ -1,0 +1,225 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search products"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="8dp"
+            android:inputType="text" />
+
+        <!-- Products Label -->
+        <TextView
+            android:id="@+id/text_view_products_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000" />
+
+        <!-- Vertical Product List -->
+        <LinearLayout
+            android:id="@+id/linear_layout_products"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- First Product -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bergerjpg" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berger Paint"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20KG red color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <!-- Second Product -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bergerrobbi" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dulux Paint"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10KG blue color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <!-- Third Product -->
+
+
+            <!-- Fourth Product -->
+
+
+        </LinearLayout>
+
+        <!-- Linear Layout for Button at Bottom -->
+        <LinearLayout
+            android:id="@+id/linear_layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <!-- Latest Product Button -->
+            <Button
+                android:id="@+id/button_latest_product"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Latest Product"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1b39c2"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/image_view_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_login_24"
+                android:contentDescription="Login" />
+
+            <ImageButton
+                android:id="@+id/image_view_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_shopping_cart_24"
+                android:contentDescription="Cart" />
+
+            <ImageButton
+                android:id="@+id/image_view_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_account_circle_24"
+                android:contentDescription="Account" />
+
+            <ImageButton
+                android:id="@+id/image_view_about_us"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_info_24"
+                android:contentDescription="About Us" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
